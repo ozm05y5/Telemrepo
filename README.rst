@@ -54,7 +54,6 @@ Doing stuff
 .. code-block:: python
 
     print(client.get_me().stringify())
-
     client.send_message('username', 'Hello! Talking to you from Telethon')
     client.send_file('username', '/home/myself/Pictures/holidays.jpg')
 
@@ -65,7 +64,6 @@ Doing stuff
     @client.on(events.NewMessage(pattern='(?i)hi|hello'))
     async def handler(event):
         await event.respond('Hey!')
-
 
 Next steps
 ----------
